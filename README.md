@@ -46,6 +46,7 @@ The application is organized into the following modules:
 | `eeprom.c` | Implements I2C-based EEPROM read and write operations |
 | `nvm.h` | Defines NvM states, data structures, constants, and function declarations |
 | `eeprom.h` | Declares EEPROM functions and status types |
+<img width="1600" height="730" alt="image" src="https://github.com/user-attachments/assets/82dce10f-20c8-456b-96fc-dd9306ce14b0" />
 
 ## 6. NvM State Machine
 
