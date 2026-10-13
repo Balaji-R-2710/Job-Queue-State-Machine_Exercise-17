@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../src/eeprom.c \
+../src/main.c \
+../src/nvm.c \
+../src/queue.c 
+
+OBJS += \
+./src/eeprom.o \
+./src/main.o \
+./src/nvm.o \
+./src/queue.o 
+
+C_DEPS += \
+./src/eeprom.d \
+./src/main.d \
+./src/nvm.d \
+./src/queue.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/%.o: ../src/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@src/eeprom.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
